@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>高清数字电视</title>
+        <link rel="stylesheet" type="text/css" href="video-js-6.4.0/video-js.css">
+        <script type="text/javascript" src="video-js-6.4.0/video.js"></script>
+        <script type="text/javascript" src="videojs-flash.min.js"></script>
+        <script src="videojs-contrib-hls.min.js"></script>
+    </head>
+    <body>
+
+      <video id="example-video" width=600 height=300 class="video-js vjs-default-skin" controls>
+        <source
+        src="ts/stream1.m3u8"
+        type="application/x-mpegURL">
+      </video>
+
+      <script>
+      var player = videojs("example-video");
+      player.play();
+      </script>
+
+</body>
+</html>
